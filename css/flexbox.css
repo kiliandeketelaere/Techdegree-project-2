@@ -1,0 +1,108 @@
+.header,
+.intro,
+.navigation,
+.project,
+.contact
+.footer
+.row {
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+.contact {
+display: flex;
+flex-direction: column;
+padding: 50px;
+}
+.intro {
+display: flex;
+align-items: center;
+margin: 10px;
+}
+
+.me {
+	display:flex;
+	border-radius: 3px;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+
+/* media queries 
+-------
+------- */
+
+@media screen and (min-width: 768px) {
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+      }
+      
+      .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        align-items: center;
+
+      }
+.footer {
+    display: flex;
+    flex-direction: row;
+    order: 1;
+
+
+
+
+
+
+
+
+
+
+
+.navigation {
+    flex-direction: row;
+}
+
+.item {
+    display: flex
+    align-items: center;
+    flex-wrap: wrap;
+    background: none;
+    width: 50%;
+}
+.intro {
+
+    flex-direction: row;
+}
+.portfolio {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+flex: 1;
+}
+.test {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+
+@media screen and (min-width: 1024px) {
+
+}
