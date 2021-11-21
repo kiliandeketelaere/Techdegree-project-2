@@ -5,12 +5,9 @@
 .contact
 .footer
 .row {
-
     display: flex;
     flex-direction: column;
 }
-
-
 .header {
 display: flex;
 flex-direction: column;
@@ -35,7 +32,12 @@ margin: 10px;
     width: 70%;
     margin-bottom: 10px;
 }
-
+.item {
+background-color: white;
+margin: 5px;    
+padding: 10px;
+margin: 5px 20px 5px 20px;
+}
 
 /* media queries 
 -------
@@ -59,34 +61,29 @@ margin: 10px;
         align-items: center;
 
       }
-.footer {
-    display: flex;
-    flex-direction: row;
-    order: 1;
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
 
 
+    .navigation {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    .item1 {
+        flex-grow: 4;
+        order: 2;
+    }
 
-
-
-
-
-
-
-
-.navigation {
-    flex-direction: row;
-}
-
-.item {
+    .item {
     display: flex
     align-items: center;
-    flex-wrap: wrap;
     background: none;
     width: 50%;
 }
 .intro {
-
     flex-direction: row;
 }
 .portfolio {
@@ -97,7 +94,6 @@ align-items: center;
 flex: 1;
 }
 .test {
-
     display: flex;
     flex-wrap: wrap;
 }
