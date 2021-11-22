@@ -1,104 +1,54 @@
-.header,
-.intro,
-.navigation,
-.project,
-.contact
-.footer
-.row {
+
+.portfolio-parent {
     display: flex;
     flex-direction: column;
-}
-.header {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
+    flex: wrap;
 }
 
-.contact {
+.portfolio {
 display: flex;
-flex-direction: column;
-padding: 50px;
 }
-.intro {
-display: flex;
-align-items: center;
-margin: 10px;
 }
 
-.me {
-	display:flex;
-	border-radius: 3px;
-    align-items: center;
-    width: 70%;
-    margin-bottom: 10px;
-}
-.item {
-background-color: white;
-margin: 5px;    
-padding: 10px;
-margin: 5px 20px 5px 20px;
-}
 
-/* media queries 
--------
-------- */
+
+
+/* media querie
+----------
+---------- */
 
 @media screen and (min-width: 768px) {
 
-    .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        align-items: center;
-      }
-      
-      .column {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-        flex: 1;
-        align-items: center;
-
-      }
-    .footer {
-        display: flex;
-        flex-direction: row;
-    }
-
-
-    .navigation {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .item1 {
-        flex-grow: 4;
-        order: 2;
-    }
-
-    .item {
-    display: flex
-    align-items: center;
-    background: none;
-    width: 50%;
-}
-.intro {
-    flex-direction: row;
-}
-.portfolio {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-align-items: center;
-flex: 1;
-}
-.test {
-    display: flex;
+ .portfolio-parent {
+     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
+     }
+
+.child {
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    width: 100px;
 }
+    
 }
+
+
+
+
 
 @media screen and (min-width: 1024px) {
 
-}
+    .portfolio-parent {
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: space-between;
+        }
+   
+   .portfolio-child {
+       width: 31%;
+   }
+       
+   }
