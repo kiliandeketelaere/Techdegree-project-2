@@ -1,54 +1,115 @@
+/* ================================= 
+  Media Queries
+==================================== */
 
-.portfolio-parent {
+.footer {
+    display: none;
+}
+
+.mobile-footer {
     display: flex;
-    flex-direction: column;
-    flex: wrap;
-}
-
-.portfolio {
-display: flex;
-}
-}
-
-
-
-
-/* media querie
-----------
----------- */
-
-@media screen and (min-width: 768px) {
-
- .portfolio-parent {
-     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-between;
-     }
+    margin: 20px;
+}
+.header {
+display: flex;
+flex-direction: column;
+}
+.head {
+    border: white;
+    background-color: white;
+    width: 80%;
+    margin: 5px 10%;
+    padding: 5px;
+}
+.col {
+    text-align: center;
+}
+.contact {
+    width: 70%;
+    margin: 0px 15% 0px 15%;
+    text-align: center;
+}
 
-.child {
+
+
+@media (min-width: 769px) {
+
+    .main-nav,
+    .row {
+        display: flex; 
+}
+.banner {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.ban {
+    width: 40%;
+}
+.first {
+    order:2;
+}
+.row {
+    flex-wrap: wrap;
+}
+.footer {
+display: flex;
+justify-content: space-around;
+}
+.mobile-footer {
+    display: none;
+}
+.primary,
+.student {
+margin-right: auto; 
+}
+.item {
+    width: 15%;
+    align-items: center;
+}
+.col {
+    min-width: 48%;
+    flex: 1; 
+    justify-content: center;
+    text-align: center;
+}
+.header {
     flex-direction: row;
-    flex: wrap;
-    width: 100px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
-    
+.title {
+    justify-content: center;
+    width: 100%;
+}
+.head {
+        border: #f8f8f8;
+        background-color: #f8f8f8;
+        width: auto ;
+        margin: auto;
+        padding: auto;
+}
+.student {
+    width: 100%;
+}
 }
 
-
-
-
-
-@media screen and (min-width: 1024px) {
-
-    .portfolio-parent {
-       flex-direction: column;
-       flex-wrap: wrap;
-       justify-content: space-between;
-        }
-   
-   .portfolio-child {
-       width: 31%;
-   }
-       
-   }
+@media (min-width: 1025px) {
+  .main-header {
+   flex-direction: row; 
+    justify-content: space-between;
+  }
+.primary {
+ flex: 1; 
+}
+.col {
+    min-width: 31%;
+    flex: 1; 
+}
+.title {
+    width: 30%;
+}
+}

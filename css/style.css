@@ -1,4 +1,117 @@
-img {
+/* ================================= 
+  Base Element Styles
+==================================== */
 
-max-width: 50%;
+* {
+	box-sizing: border-box;
 }
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+h2,
+h3,
+a {
+	color: #093a58;
+}
+h2,
+h3 {
+	margin-top: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.35em;
+	margin: 0;
+}
+.main-nav {
+	margin-top: 5px;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+.main-nav a {
+	font-size: .95em;
+	color: #292929;
+	text-transform: uppercase;
+}
+.main-nav a:hover {
+	color: #646464;
+}
+.header {
+	text-align: center;
+}
+.heading {
+	text-align: center;
+}
+
+/* ---- Layout Containers ---- */
+.header {
+	background: #f8f8f8;
+}
+.header {
+	background: #f8f8f8;
+}
+.banner,
+.main-footer {
+	text-align: center;
+}
+.banner {
+	color: rgb(112, 112, 112);
+	background: #f8f8f8;
+	padding: 3.2em 0;
+}
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+.main-footer {
+	background: #f8f8f8;
+	padding: 2em 0;
+}
+
+.seperator {
+border-top: 2px solid #cecece;
+margin: 0px 40px 0 40px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+.headline {
+	margin-bottom: 0;
+}
+.feat-img {
+	border-radius: 5px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
