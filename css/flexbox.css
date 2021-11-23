@@ -33,7 +33,7 @@ flex-direction: column;
 
 
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
     .main-nav,
     .row {
@@ -96,7 +96,7 @@ margin-right: auto;
 }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .main-header {
    flex-direction: row; 
     justify-content: space-between;
